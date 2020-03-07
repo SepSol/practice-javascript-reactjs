@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TITLE</title>
+</head>
+<body>
+    <p id="testP">This is a paragraph.</p>
+
+    <button onclick="document.getElementById('testP').innerHTML = Date()">The time is?</button>
+    <button onclick="this.innerHTML = Date()">this.element</button>
+    <button onclick="displayDate()">separate script</button> 
+    <script>
+        function displayDate() {
+            dcoument.getElementById('testP2').innerHTML = Date();
+        }
+    </script>
+    <p id="testP2"></p>
+    
+    <br/>
+    
+    <div id="uniqueIdName">This is the 1st div!</div>
+    <div class="specialClassName">This is the 2nd div!</div>
+    <div>This is the 3rd div!</div>
+    <div class="specialClassName">This is the 4th div!</div>
+    
+    <br/>
+
+    <div
+        class = "myButton"
+        style = "
+            color:white;
+            background-color:rgb(61, 61, 61);
+            text-size:20px;
+            text-align: center;
+            padding: 10px;
+        "
+    >
+        I am a button!
+    </div>
+
+    <button id="myButton">I am a button!</button>
+    
+    <hr/>
+
+    <div class="header2Parent">
+
+        <hr/>
+        <p>This is a sample paragraph.</p>
+        <ul>
+            <li>Hello</li>
+            <li>Hello 2</li>
+        </ul>
+        <hr/>
+
+    </div>
+
+    <hr/>
+    <p style="color: rgba(20, 128, 110, 0.884);"><strong>html-colored</strong> paragraph!</p>
+    <div
+        class = "myButton2"
+        style = "
+            color:white;
+            background-color:rgb(61, 61, 61);
+            text-size:20px;
+            text-align: center;
+            padding: 10px;
+        "
+    >
+        I am the 2nd button!
+    </div>
+
+    <br/>
+
+    <div class="parentRect">
+        <div class="childRect"></div>
+    </div>
+
+    <style>
+        .parentRect{
+            width:100%;
+            height:200px;
+            background:red;
+            position:relative;
+        }
+        .childRect{
+            position:absolute;
+            width:50px;
+            height:50px;
+            background:green;
+        }
+    </style>
+
+    <h3>I'm a Regular Function</h3>
+    <button id="thisButReg">When I call <strong>this</strong> you see...</button>
+    <p id="thisPReg"></p>
+
+    <h3>I'm an Arrow Function</h3>
+    <button id="thisButArr">When I call <strong>this</strong> you see...</button>
+    <p id="thisPArr"></p>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
