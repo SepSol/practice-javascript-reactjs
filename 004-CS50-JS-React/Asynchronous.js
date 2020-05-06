@@ -44,7 +44,7 @@ function print5() {
 /*
 
 JavaScript is a single-threaded, synchronous language
-JavaScript has *functions* that act asynchronously
+JavaScript has *functions* that act asynchronously (e.g. async function)
 
 Asynchronous JavaScript:
 1. Execution stack  => last in - first out  |   JavaScript Engine
